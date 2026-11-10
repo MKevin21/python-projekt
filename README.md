@@ -1,4 +1,5 @@
 # python-projekt
+# Megyeri Kevin-EV42XT
 # Használt Autók Piacának Adatelemzése (Kaggle Dataset)
 
 Ez a projekt a használt autók piacának adatelemzését és vizualizációját mutatja be Python környezetben. A vizsgálat célja, hogy feltárja az árakat és az értékvesztést befolyásoló legfontosabb tényezőket, mint a futott kilométer, a jármű kora, az üzemanyagtípus és a sebességváltó fajtája.

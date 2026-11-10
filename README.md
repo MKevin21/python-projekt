@@ -16,23 +16,28 @@ Az adathalmaz a Kaggle "Used Cars Dataset" gyűjteményéből származik, amely 
 
 ## Elemzési Kérdések és Főbb Eredmények
 
-**1. Milyen kapcsolat van a futott kilométer (`kmDriven`) és a meghirdetett ár (`AskPrice`) között?** (diagram1.jpg)
+**1. Milyen kapcsolat van a futott kilométer (`kmDriven`) és a meghirdetett ár (`AskPrice`) között?** 
+![1. Diagram](diagram1.jpg)
 * **Módszer:** Korrelációszámítás és pontdiagram (Scatter plot).
 * **Következtetés:** A NumPy segítségével kiszámolt negatív korrelációs együttható matematikailag is igazolja a vizuálisan látható trendet: a futott kilométerek növekedésével a járművek ára egyértelműen és arányosan csökken.
 
 **2. Melyik az az 5 autómárka, amelyik a legdrágább az 5 évnél idősebb autók piacán?** 
+![2. Diagram](diagram2.jpg)
 * **Módszer:** Pandas adatcsűrés (`Age > 5`), csoportosítás (`groupby`) és oszlopdiagram (Bar chart).
 * **Következtetés:** A diagram rávilágít arra, hogy a prémium márkák (pl. Mercedes-Benz, BMW, Audi) tartják a legmagasabb átlagárat az 5 évnél idősebb kategóriában is, jelentősen elszakadva a tömegmárkáktól.
 
 **3. Milyen a különböző üzemanyagtípusok megoszlása a piacon?** 
+![3. Diagram](diagram3.jpg)
 * **Módszer:** Kategóriák összeszámolása (`value_counts`) és százalékos kördiagram (Pie chart).
 * **Következtetés:** Az interaktív diagram pontosan megmutatja a dízel és benzines autók dominanciáját a piacon, míg az alternatív meghajtások (hibrid/CNG/elektromos) egyelőre csak kisebb szeletet képviselnek.
 
 **4. Hogyan befolyásolja a sebességváltó típusa az árat a jármű korának függvényében?** 
+![4. Diagram](diagram4.jpg)
 * **Módszer:** Kétváltozós, színnel kódolt pontdiagram (Colored Scatter plot).
 * **Következtetés:** Jól látható, hogy azonos életkor (évjárat) mellett az automata váltós modellek jellemzően egy magasabb ársávban helyezkednek el a manuális váltós társakhoz képest, és ez a felár az évek múlásával is megmarad.
 
 **5. Mekkora értékvesztést jelent a tulajdonosok száma a 3 leggyakoribb márka esetében?** 
+![5. Diagram](diagram5.jpg)
 * **Módszer:** Dinamikus szűrés a top 3 márkára (`isin`), többszintű aggregáció, és többpaneles vonaldiagram (Faceted Line chart).
 * **Következtetés:** A márkaspecifikus paneleken egyértelműen leolvasható, hogy a második tulajdonostól származó autók árgörbéje (értékvesztése) meredekebb, illetve alacsonyabbról indul, mint az első tulajdonosok által árult járműveké.
 

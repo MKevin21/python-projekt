@@ -16,10 +16,9 @@ Az adathalmaz a Kaggle "Used Cars Dataset" gyűjteményéből származik, amely 
 
 ## Elemzési Kérdések és Főbb Eredmények
 
-**1. Milyen kapcsolat van a futott kilométer (`kmDriven`) és a meghirdetett ár (`AskPrice`) között?** 
+**1. Milyen kapcsolat van a futott kilométer (`kmDriven`) és a meghirdetett ár (`AskPrice`) között?** (diagram1.jpg)
 * **Módszer:** Korrelációszámítás és pontdiagram (Scatter plot).
 * **Következtetés:** A NumPy segítségével kiszámolt negatív korrelációs együttható matematikailag is igazolja a vizuálisan látható trendet: a futott kilométerek növekedésével a járművek ára egyértelműen és arányosan csökken.
-* (diagram1.jpg)
 
 **2. Melyik az az 5 autómárka, amelyik a legdrágább az 5 évnél idősebb autók piacán?** 
 * **Módszer:** Pandas adatcsűrés (`Age > 5`), csoportosítás (`groupby`) és oszlopdiagram (Bar chart).

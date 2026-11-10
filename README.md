@@ -1,4 +1,4 @@
-# python-projekt
+# Python-projekt
 # Megyeri Kevin-EV42XT
 # Használt Autók Piacának Adatelemzése (Kaggle Dataset)
 
